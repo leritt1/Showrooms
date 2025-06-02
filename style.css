@@ -48,7 +48,7 @@ align-items: center;
 }
 
 .menu-list {
-margin-right: 30px;
+margin-right: 20px;
 }
 
 /*********************************************************************лого***********************************************/
@@ -56,6 +56,8 @@ margin-right: 30px;
 .point1 {
   /* width: 50px; */
   margin-left: 100px;
+  border: none;
+  background: transparent;
 }
 
 .header-services {
@@ -91,6 +93,16 @@ transition: color 0.3s ease;
     color: #999;
 }
 
+.contact-link {
+  color: #AAAAAA;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.contact-link:hover{
+  color: #1a1a1a;
+}
+
 a {
 color: black;
 text-decoration: none;
@@ -119,6 +131,10 @@ border: 1px solid #E0E0E0;
 display: flex;
 justify-content: center;
 margin-top: 49px;
+}
+
+.imgbannera {
+  width: 100%;
 }
 
 /**************************************************************текст баннера****************************************/
@@ -490,7 +506,7 @@ margin-bottom: 190px;
   }
 
 /********************************************992*******************/
-@media(max-width:992px){
+@media(max-width:1040px){
   
 .header-contacts {
    
@@ -551,7 +567,7 @@ margin-bottom: 190px;
 }
   }
   /********************************************768*********************************/
-  @media(max-width:768px){
+  @media(max-width:908px){
   
 .header-contacts {
    text-align:center; 
@@ -613,7 +629,7 @@ margin-bottom: 190px;
   }
 
   /******************************************576***************************/
-@media(max-width:576px) {
+@media(max-width:683px) {
   
 .header-contacts {
    text-align:center; 
@@ -685,8 +701,10 @@ margin-bottom: 190px;
    transform:none ;
 }
   }
-  /*******************************320*******************/
-  @media(max-width:320px) {
+  
+
+/**********************567**********************/
+ @media(max-width:567px) {
   
 .header-contacts {
    text-align:center; 
@@ -694,7 +712,7 @@ margin-bottom: 190px;
 
 .header-services {
   display: none;
-  transform: scale(0.6);
+  transform: scale(0.5);
   align-items: center;
   
 }
@@ -715,44 +733,116 @@ margin-bottom: 190px;
    grid-template-columns :1fr ; 
    padding: 0;
    /* align-items: left; */
-}
-
-.section-items {
-  transform: scale(0.7);
-}
-
-.b-text {
-  transform: scale(0.7);
-  width: 320px;
-  text-align: center;
-}
-.container-icons {
-  transform: scale(0.4);
-}
-.footer-container{
-   max-width: 320px;
-  /* align-items: left; */
-}
-.footer-links{
-   max-width :320px;
-   text-align: left;
-}
-.footer-logo, .footer-mailing, .footer-social{
-   max-width :320px;
-   text-align:center ;
-}
-
-.return-top{
-   /* writing-mode :horizontal ;  */
-   transform:none ;
-}
-
-.footer-input {
-  max-width: 300px;
-}
-
-.footer-checkbox-text {
-  max-width: 300px;
-}
   }
 
+  .section-items {
+    transform: scale(0.7);
+  }
+  
+  .b-text {
+    transform: scale(0.7);
+    width: 320px;
+    text-align: center;
+  }
+  .container-icons {
+    transform: scale(0.4);
+  }
+  .footer-container{
+     max-width: 320px;
+    /* align-items: left; */
+  }
+  .footer-links{
+     max-width :320px;
+     text-align: left;
+  }
+  .footer-logo, .footer-mailing, .footer-social{
+     max-width :320px;
+     text-align:center ;
+  }
+  
+  .return-top{
+     /* writing-mode :horizontal ;  */
+     transform:none ;
+  }
+  
+  .footer-input {
+    max-width: 300px;
+  }
+  
+  .footer-checkbox-text {
+    max-width: 300px;
+  }
+    }
+
+    /******************************320**********************************/
+
+  
+  @media(max-width:320px) {
+  
+    .header-contacts {
+       text-align:center; 
+    }
+    
+    .header-services {
+      display: none;
+      transform: scale(0.6);
+      align-items: center;
+      
+    }
+    
+    .banner-div {
+      display: none;
+    }
+    
+    .banner-text-div {
+      transform: scale(0.7);
+      width:320px;
+      align-items: center;
+    
+    }
+    
+    .container-itemes{
+      transform: scale(0.7);
+       grid-template-columns :1fr ; 
+       padding: 0;
+       /* align-items: left; */
+    }
+    
+    .section-items {
+      transform: scale(0.7);
+    }
+    
+    .b-text {
+      transform: scale(0.7);
+      width: 320px;
+      text-align: center;
+    }
+    .container-icons {
+      transform: scale(0.4);
+    }
+    .footer-container{
+       max-width: 320px;
+      /* align-items: left; */
+    }
+    .footer-links{
+       max-width :320px;
+       text-align: left;
+    }
+    .footer-logo, .footer-mailing, .footer-social{
+       max-width :320px;
+       text-align:center ;
+    }
+    
+    .return-top{
+       /* writing-mode :horizontal ;  */
+       transform:none ;
+    }
+    
+    .footer-input {
+      max-width: 300px;
+    }
+    
+    .footer-checkbox-text {
+      max-width: 300px;
+    }
+      }
